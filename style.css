@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.backimage{
+    min-height: 100vh;
+    background:  url("img/benidorm.jpg") no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: 0 0 2px 2px rgba(5, 7, 12, 0.75);
+}
+.blanco{
+    width: auto;
+    height: 60vh;
+    background-color: rgb(221, 230, 230);
+}
+.david{
+    width: auto;
+    height: auto;
+}
+.uno{
+    height: 80vh;
+}
+.dos{
+    height: 30vh;
+}
+.novedades{
+    background-color: rgb(156, 158, 4);
+}
+.color{
+    color: rgb(156, 158, 4);
+}
