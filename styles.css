@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.container{
+    width: 100vw; 
+    height:80vh; 
+    position: absolute;
+    display: block;
+}
+
+a{
+    /* background-image: url("./assets/pngwing\ 2.png"); */
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    font-size: 3.5rem;
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: #FB5014;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: #FB5014;
+  }
+
+  #exampleFormControlInput1{
+    width: 400px;
+    height: 100px;
+  }
+
+
