@@ -1,0 +1,84 @@
+.navbar{
+  max-width: 100%;
+  height: 10vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.01) !important;
+  height: 10%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cntnr {
+  font-family: "Satoshi";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 8%);
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  position: relative;
+}
+
+.link {
+  width: 160px;
+  text-decoration: none;
+  color: rgb(11, 10, 7);
+  padding: 0px 2px 0px 2px;
+  position: relative;
+}
+
+.linksm {
+  width: 100%;
+  text-decoration: none;
+  color: rgb(11, 10, 7);
+  padding: 0px 2px 0px 2px;
+  position: relative;
+}
+
+.link::before,
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgb(128, 86, 15);
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.link::before {
+  top: 0;
+  left: 0;
+  transform-origin: left;
+}
+.link::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar.hide-nav {
+  transform: translateY(-500%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar:not(.hide-nav) {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
