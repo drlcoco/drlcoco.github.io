@@ -36,3 +36,9 @@ img {
   width: 10%;
   height: auto;
 }
+
+.logo {
+  width: 20%;
+  background-color: transparent;
+  border: none;
+}

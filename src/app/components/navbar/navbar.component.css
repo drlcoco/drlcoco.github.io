@@ -1,18 +1,8 @@
 .logo {
-  height: 60px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
 }
-
-/* nav .nav-link {
-  color: #ffffff;
-  font-weight: bold;
-  padding: 10px 15px;
-  text-transform: uppercase;
-}
-
-nav .nav-link:hover {
-  color: #ffffff;
-  background-color: #4a4a4a;
-} */
 
 nav .nav-link {
   color: #ffffff;
