@@ -50,7 +50,7 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
-              "baseHref": "/"
+              "baseHref": "/src/"
             }
           },
           "defaultConfiguration": "production"
