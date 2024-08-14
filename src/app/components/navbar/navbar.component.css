@@ -56,3 +56,7 @@ header .set-color-beige {
 .dynamic-text {
   font-size: 1.2vw;
 }
+
+.active {
+  border-bottom: 2px solid white;
+}

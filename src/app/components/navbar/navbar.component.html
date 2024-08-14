@@ -1,4 +1,4 @@
-<header class="container-fluid py-3 fixed-top set-color-beige">
+<!-- <header class="container-fluid py-3 fixed-top set-color-beige">
       <div class="row">
           <div class="col-12 d-flex justify-content-center">
               <img src="assets/images/IMG_7010.jpg" alt="Logo" class="logo">
@@ -24,6 +24,35 @@
               </nav>
           </div>
       </div>
+</header> -->
+
+<header class="container-fluid py-3 fixed-top set-color-beige">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <img src="assets/images/IMG_7010.jpg" alt="Logo" class="logo">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green">
+      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center">
+        <ul class="nav w-100 justify-content-between justify-content-md-around align-items-center">
+          <li class="nav-item">
+            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#inicio'), '':!setActiveTab('/#inicio')}" href="#inicio">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#sobre-nosotros'), '':!setActiveTab('/#sobre-nosotros')}" href="#sobre-nosotros">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#proyectos'), '':!setActiveTab('/#proyectos')}" href="#proyectos">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#contacto'), '':!setActiveTab('/#contacto')}" href="#contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
+
 
 
