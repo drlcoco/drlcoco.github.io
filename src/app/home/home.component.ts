@@ -13,21 +13,6 @@ import { ContactComponent } from '../components/contact/contact.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  /* @HostListener('window:hashchange', ['$event'])
-  onHashChange(event: Event) {
-    this.scrollToElement();
-  }
-
-  ngOnInit() {
-    this.scrollToElement();
-  }
-
-  private scrollToElement(): void {
-    const element = document.querySelector(location.hash);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-    }
-  } */
 
     @HostListener('window:hashchange', ['$event'])
     onHashChange(event: Event) {
