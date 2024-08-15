@@ -7,13 +7,15 @@
 
 nav .nav-link {
   color: #ffffff;
-  font-weight: bold;
-  padding: 4px 1px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 1px 1px;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
+
 
 nav .nav-link::after {
   content: '';
