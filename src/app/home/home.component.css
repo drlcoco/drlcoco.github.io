@@ -1,3 +1,8 @@
 div {
   background-color: #F3F2EC;
 }
+.divider {
+  height: 140px;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,8 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin-right: -35px;
+}

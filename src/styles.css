@@ -11762,6 +11762,7 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-h1, p, .my-class {
+h1, h2, p, .my-class {
   font-family: "Questrial", sans-serif;
+  letter-spacing: 2px;
 }
