@@ -40,6 +40,11 @@ header .set-color-dark-green {
   background-color: #4B5942;
 }
 
+header .set-color-dark-green-sm {
+  height: 30px;
+  background-color: #4B5942;
+}
+
 header .set-color-beige {
   height: 60px;
   background-color: #F2E8C4;
@@ -47,6 +52,10 @@ header .set-color-beige {
 
 .dynamic-text {
   font-size: 1.2vw;
+}
+
+.dynamic-text-sm {
+  font-size: 2.5vw;
 }
 
 .active {

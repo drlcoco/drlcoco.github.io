@@ -5,9 +5,9 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green">
-      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center py-2">
-        <ul class="nav w-100 justify-content-between justify-content-md-around align-items-center">
+    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green d-none d-md-block">
+      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center">
+        <ul class="nav w-100 justify-content-around align-items-center">
           <li class="nav-item">
             <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#inicio'), '':!setActiveTab('/#inicio')}" href="#inicio">INICIO</a>
           </li>
@@ -19,6 +19,25 @@
           </li>
           <li class="nav-item">
             <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#contacto'), '':!setActiveTab('/#contacto')}" href="#contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green-sm d-md-none">
+      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center">
+        <ul class="nav w-100 justify-content-around align-items-center">
+          <li class="nav-item">
+            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#inicio'), '':!setActiveTab('/#inicio')}" href="#inicio">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#sobre-nosotros'), '':!setActiveTab('/#sobre-nosotros')}" href="#sobre-nosotros">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#proyectos'), '':!setActiveTab('/#proyectos')}" href="#proyectos">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#contacto'), '':!setActiveTab('/#contacto')}" href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </nav>
