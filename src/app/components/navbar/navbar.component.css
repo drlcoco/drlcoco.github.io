@@ -1,6 +1,6 @@
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   background-color: transparent;
   border: none;
 }
@@ -63,6 +63,16 @@ header .set-color-beige {
 }
 
 .bg-logo {
-  height: 80px;
+  height: 120px;
   transform: translateY(-20px);transform: translateY(-20px);
 }
+
+.hide-header {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+header {
+  transition: transform 0.3s ease-out;
+}
+
