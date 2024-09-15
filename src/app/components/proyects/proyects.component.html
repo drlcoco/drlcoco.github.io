@@ -1,17 +1,69 @@
- <section class="container text-center fw-lighter lh-base">
-  <div class="row">
-    <div class="col-12 px-5">
+<section class="container text-center fw-lighter lh-base mb-5 ">
+  <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.04</h6>
+  <div class="carousel-container mb-5">
+    <button (click)="showPrevious4()" [disabled]="!this.showButtonPrevious4" class="carousel-nav-button">❮</button>
+    <div class="carousel">
+      @for (item of displayedImages4; track $index) {
+        @if(item && item.src !== undefined) {
+          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal4" (click)="setImage4($event)">
+            <img [src]="item.src" [class]="item.class" class="imgCarousel">
+          </a>
+          <div class="modal" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img [src]="currentSrc4" class="modalImage">
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+    <button (click)="showNext4()" [disabled]="!this.showButtonNext4" class="carousel-nav-button">❯</button>
+  </div>
+</section>
+
+<section class="container text-center fw-lighter lh-base mb-5">
+  <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.05</h6>
+  <div class="carousel-container mb-5">
+    <button (click)="showPrevious5()" [disabled]="!this.showButtonPrevious5" class="carousel-nav-button">❮</button>
+    <div class="carousel">
+      @for (item of displayedImages5; track $index) {
+        @if(item && item.src !== undefined) {
+          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage5($event)">
+            <img [src]="item.src" [class]="item.class" class="imgCarousel">
+          </a>
+          <div class="modal" tabindex="-1" id="imageModal" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img [src]="currentSrc5" class="modalImage">
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+    <button (click)="showNext5()" [disabled]="!this.showButtonNext5" class="carousel-nav-button">❯</button>
+  </div>
+</section>
+
+<section class="container text-center fw-lighter lh-base my-5 separator">
+  <div class="row mb-5">
+    <div class="col-12 px-5 mb-3">
       <h6 class="font-weight-bold mb-5">DESARROLLAMOS Y DISEÑAMOS TU PROYECTO</h6>
       <p class="mb-5">Planos - Renders - Definición de materiales</p>
     </div>
   </div>
-  <div class="row my-4">
-    <div class="col-12 px-5">
+  <div class="row my-5">
+    <div class="col-12 px-5 mb-3">
       <h6 class="font-weight-bold mb-5">DIRIGIMOS LA OBRA DE PRINCIPIO A FIN</h6>
       <p class="mb-5">Supervisión y seguimiento de obra</p>
     </div>
   </div>
-  <div class="row my-4">
+  <div class="row my-5">
     <div class="col-12 px-5">
       <h6 class="font-weight-bold mb-5">COMPLETAMOS CON ELEMENTOS DECORATIVOS</h6>
       <p class="mb-5">Entrega proyecto llave en mano</p>

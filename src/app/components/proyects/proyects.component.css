@@ -1,0 +1,116 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 85vw;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel .imgCarousel {
+  max-height: 400px;
+  max-width: 400px;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 10px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.carousel img.center {
+  transform: scale(1.2);
+  opacity: 1;
+  position: relative;
+  z-index: 99;
+}
+
+.carousel img.left {
+  transform: scale(1) translateX(50px);
+  opacity: 0.7;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel img.right {
+  transform: scale(1) translateX(-50px);
+  opacity: 0.7;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.carousel-nav-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-dialog {
+  max-width: 70%;
+  max-height: 70%;
+  width: 70vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  max-width: 900px;
+  object-fit: cover;
+  z-index: 10;
+  opacity: 1;
+}
+
+a {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.separator {
+  margin-top: 200px !important;
+}
