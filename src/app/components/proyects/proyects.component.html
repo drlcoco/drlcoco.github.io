@@ -1,4 +1,4 @@
-<section class="container text-center fw-lighter lh-base mb-5 ">
+<section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
   <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.04</h6>
   <div class="carousel-container mb-5">
     <button (click)="showPrevious4()" [disabled]="!this.showButtonPrevious4" class="carousel-nav-button">❮</button>
@@ -24,7 +24,7 @@
   </div>
 </section>
 
-<section class="container text-center fw-lighter lh-base mb-5">
+<section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
   <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.05</h6>
   <div class="carousel-container mb-5">
     <button (click)="showPrevious5()" [disabled]="!this.showButtonPrevious5" class="carousel-nav-button">❮</button>
@@ -49,6 +49,110 @@
     <button (click)="showNext5()" [disabled]="!this.showButtonNext5" class="carousel-nav-button">❯</button>
   </div>
 </section>
+
+<div id="carouselProject4ControlsSm" class="carousel text-center d-md-none px-2 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/images/project4/image00001.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00002.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00003.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00004.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00005.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00006.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00007.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00008.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00009.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00010.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00011.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00012.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project4/image00013.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4ControlsSm" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4ControlsSm" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="modal" tabindex="-1" id="imageModalSm4" aria-labelledby="imageModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img [src]="currentSrc4" class="modalImage">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="carouselProject5Controls" class="carousel text-center d-md-none px-2 my-5 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/images/project5/image00001.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00002.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00003.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00004.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00005.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00006.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00007.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00008.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00009.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project5/image00010.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject5Controls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProject5Controls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <section class="container text-center fw-lighter lh-base my-5 separator">
   <div class="row mb-5">
