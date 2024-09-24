@@ -11753,17 +11753,18 @@ html {
 
 @font-face {
   font-family: "Questrial";
-  src: url("/path/to/questrial-font.woff2") format("woff2"),
-       url("/path/to/questrial-font.woff") format("woff");
+  src: url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap/questrial-font.woff2") format("woff2"),
+       url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap/questrial-font.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
   font-family: "Questrial", sans-serif;
+  letter-spacing: 0.1em;
 }
 
-h1, h2, p, .my-class {
+/* h1, h2, p, .my-class {
   font-family: "Questrial", sans-serif;
   letter-spacing: 2px;
-}
+} */

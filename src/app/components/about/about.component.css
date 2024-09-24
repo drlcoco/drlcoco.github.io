@@ -2,3 +2,7 @@ main
 {
   scroll-margin-bottom: 500px;
 }
+
+.title {
+  font-weight: bold;
+}

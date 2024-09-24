@@ -53,3 +53,19 @@ img {
   background-color: transparent;
   border: none;
 }
+
+h1 {
+  letter-spacing: 0.2em;  /* Espaciado más amplio */
+  font-weight: lighter;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  letter-spacing: 0.25em;  /* Un poco menos espaciado */
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 1.5;  /* Mantiene buena separación vertical */
+}
+
+
