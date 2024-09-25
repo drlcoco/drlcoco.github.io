@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-proyects',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.css'
 })
-export class ProyectsComponent {
+export class ProyectsComponent implements OnInit{
 
   images4 = [
     { src: '/assets/images/project4/image00001.png', alt: 'image00001' },
@@ -46,6 +46,13 @@ export class ProyectsComponent {
   showButtonNext4: boolean = true;
   showButtonPrevious5: boolean = false;
   showButtonNext5: boolean = true;
+
+  constructor(private cdr: ChangeDetectorRef) {}
+
+  ngOnInit(): void {
+    // Cambiar alguna propiedad aquí
+    this.cdr.detectChanges(); // Forzar detección de cambios
+  }
 
   get displayedImages4() {
     const prevIndex = (this.currentIndex4 - 1 + this.images4.length) % this.images4.length;
