@@ -63,7 +63,8 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 0.3em;  /* Un poco menos espaciado */
+  letter-spacing: 0.4em;  /* Un poco menos espaciado */
+  font-size: 0.6rem;
   font-weight: lighter;
   text-transform: uppercase;
   line-height: 1.7;  /* Mantiene buena separación vertical */
