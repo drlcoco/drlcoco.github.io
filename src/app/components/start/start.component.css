@@ -56,6 +56,7 @@ img {
 
 h1 {
   letter-spacing: 0.4em; /* Espaciado más amplio */
+  font-size: 0.9rem;
   line-height: 1.5; /* Mantiene buena separación vertical */
   font-weight: lighter;
   margin-top: 2rem;
