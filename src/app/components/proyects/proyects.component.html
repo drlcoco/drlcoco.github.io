@@ -1,3 +1,4 @@
+<!-- IMÁGENES DE PROYECTOS MD - XXL -->
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
   <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.04</h6>
   <div class="carousel-container mb-5">
@@ -12,7 +13,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
-                  <img [src]="currentSrc4" class="modalImage">
+                  <img [src]="currentSrc4" class="modalImage" loading="lazy">
                 </div>
               </div>
             </div>
@@ -32,7 +33,7 @@
       @for (item of displayedImages5; track $index) {
         @if(item && item.src !== undefined) {
           <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage5($event)">
-            <img [src]="item.src" [class]="item.class" class="imgCarousel">
+            <img [src]="item.src" [class]="item.class" class="imgCarousel" loading="lazy">
           </a>
           <div class="modal" tabindex="-1" id="imageModal" aria-labelledby="imageModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -50,27 +51,54 @@
   </div>
 </section>
 
+<section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
+  <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.06</h6>
+  <div class="carousel-container mb-5">
+    <button (click)="showPrevious6()" [disabled]="!this.showButtonPrevious6" class="carousel-nav-button">❮</button>
+    <div class="carousel">
+      @for (item of displayedImages6; track $index) {
+        @if(item && item.src !== undefined) {
+          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal6" (click)="setImage6($event)">
+            <img [src]="item.src" [class]="item.class" class="imgCarousel nueva" loading="lazy">
+          </a>
+          <div class="modal" tabindex="-1" id="imageModal6" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img [src]="currentSrc6" class="modalImage">
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+    <button (click)="showNext6()" [disabled]="!this.showButtonNext6" class="carousel-nav-button">❯</button>
+  </div>
+</section>
+
+<!-- IMÁGENES DE PROYECTOS SM - XS -->
 <div class="text-center d-md-none">
   <h6 class="fw-bold fs-5 mb-4">PROYECTO ESTUDIO 96 | N.04</h6>
-</div>
+                </div>
 <div id="carouselProject4ControlsSm" class="carousel slide text-center d-md-none mx-auto mb-5" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="./assets/images/project4/image00001.webp" class="d-block w-100" alt="...">
       <!-- <img src="/assets/images/project4/image00001.webp" class="d-block w-100" alt="..."> -->
-    </div>
+              </div>
     <div class="carousel-item">
       <img src="/assets/images/project4/image00002.webp" class="d-block w-100" alt="...">
-    </div>
+            </div>
     <div class="carousel-item">
       <img src="/assets/images/project4/image00003.webp" class="d-block w-100" alt="...">
-    </div>
+          </div>
     <div class="carousel-item">
       <img src="/assets/images/project4/image00004.webp" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="/assets/images/project4/image00005.webp" class="d-block w-100" alt="...">
-    </div>
+  </div>
     <div class="carousel-item">
       <img src="/assets/images/project4/image00006.webp" class="d-block w-100" alt="...">
     </div>
@@ -163,6 +191,56 @@
   </button>
 </div>
 
+<div class="separator d-md-none"></div>
+
+<div class="text-center mt-5 d-md-none">
+  <h6 class="fw-bold fs-5 mt-5">PROYECTO ESTUDIO 96 | N.06</h6>
+</div>
+<div id="carouselProject6Controls" class="carousel slide text-center d-md-none mb-5 mt-4 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/images/project6/sm_xs/image00001.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00002.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00003.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00004.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00005.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00006.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00007.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00008.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00009.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/project6/sm_xs/image00010.webp" class="d-block w-100 h-50" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject6Controls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProject6Controls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- FIN DE PROYECTOS -->
+
 <section class="container text-center fw-lighter lh-base my-5 separator">
   <div class="row mb-5">
     <div class="col-12 px-5 mb-3">
@@ -183,4 +261,3 @@
     </div>
   </div>
 </section>
-
