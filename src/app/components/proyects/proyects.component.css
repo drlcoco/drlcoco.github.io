@@ -31,13 +31,14 @@ section {
 }
 
 .carousel .imgCarousel {
+  image-orientation: from-image;
   max-height: 400px;
-  max-width: 400px;
+  max-width: 300px;
   min-width: 50px;
-  min-height: 50px;
-  margin: 0 10px;
+  min-height: 400px;
   transition: transform 0.5s ease-in-out;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .carousel img.center {

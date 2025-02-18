@@ -11,9 +11,9 @@
           </a>
           <div class="modal" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <img [src]="currentSrc4" class="modalImage" loading="lazy">
+              <div class="modal-content bg-transparent border-0">
+                <div class="modal-body bg-transparent border-0">
+                  <img [src]="currentSrc4" class="modalImage rounded-3" loading="lazy">
                 </div>
               </div>
             </div>
@@ -37,9 +37,9 @@
           </a>
           <div class="modal" tabindex="-1" id="imageModal" aria-labelledby="imageModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <img [src]="currentSrc5" class="modalImage">
+              <div class="modal-content bg-transparent border-0">
+                <div class="modal-body bg-transparent border-0">
+                  <img [src]="currentSrc5" class="modalImage rounded-3">
                 </div>
               </div>
             </div>
@@ -59,13 +59,13 @@
       @for (item of displayedImages6; track $index) {
         @if(item && item.src !== undefined) {
           <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal6" (click)="setImage6($event)">
-            <img [src]="item.src" [class]="item.class" class="imgCarousel nueva" loading="lazy">
+            <img [src]="item.src" [class]="item.class" class="imgCarousel" loading="lazy">
           </a>
           <div class="modal" tabindex="-1" id="imageModal6" aria-labelledby="imageModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <img [src]="currentSrc6" class="modalImage">
+              <div class="modal-content bg-transparent border-0">
+                <div class="modal-body bg-transparent border-0">
+                  <img [src]="currentSrc6" class="modalImage rounded-3">
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@
       <img src="/assets/images/project6/sm_xs/image00009.webp" class="d-block w-100 h-50" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/assets/images/project6/sm_xs/image00010.webp" class="d-block w-100 h-50" alt="...">
+      <img src="/assets/images/project6/sm_xs/image000010.webp" class="d-block w-100 h-50" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject6Controls" data-bs-slide="prev">

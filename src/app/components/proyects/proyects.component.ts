@@ -47,10 +47,10 @@ export class ProyectsComponent implements OnInit, AfterViewInit{
     { src: `/assets/images/project6/${this.folder}/image00004.webp`, alt: 'image00004' },
     { src: `/assets/images/project6/${this.folder}/image00005.webp`, alt: 'image00005' },
     { src: `/assets/images/project6/${this.folder}/image00006.webp`, alt: 'image00006' },
-    { src: `/assets/images/project6/${this.folder}/image00007.webp`, alt: 'image00007' }/* ,
+    { src: `/assets/images/project6/${this.folder}/image00007.webp`, alt: 'image00007' },
     { src: `/assets/images/project6/${this.folder}/image00008.webp`, alt: 'image00008' },
     { src: `/assets/images/project6/${this.folder}/image00009.webp`, alt: 'image00009' },
-    { src: `/assets/images/project6/${this.folder}/image00010.webp`, alt: 'image00010' } */
+    { src: `/assets/images/project6/${this.folder}/image000010.webp`, alt: 'image000010' }
   ];
 
   currentIndex4: number = 0;
@@ -97,13 +97,9 @@ export class ProyectsComponent implements OnInit, AfterViewInit{
     // Actualiza las rutas de las imágenes dinámicamente
     this.images6 = this.images6.map((img, index) => ({
       ...img,
-      //src: img.src.replace(/\/xl_xxl\//, `/${this.folder}/`)
       src: `/assets/images/project6/${this.folder}/image0000${index + 1}.webp`
     }));
 
-    this.images6.forEach((img, index) => {
-        console.log("img.src:  ",img.src);
-    });
   }
 
   ngAfterViewInit() {
@@ -235,7 +231,6 @@ export class ProyectsComponent implements OnInit, AfterViewInit{
 
   setImage6(event: any): void {
     this.currentSrc6 = event.srcElement.src;
-    console.log("currentSrc6:  ",this.currentSrc6);
   }
 
   getResponsiveImageSrc(image: any): string {
