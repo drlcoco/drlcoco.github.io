@@ -1,7 +1,8 @@
 <!-- IMÁGENES DE PROYECTOS MD - XXL -->
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
-  <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.04</h6>
-  <div class="carousel-container mb-5">
+  <h6 class="fw-bold fs-5">PROYECTO ESTUDIO 96 | N.04</h6>
+  <!-- <div class="carousel-container mb-5">
+
     <button (click)="showPrevious4()" [disabled]="!this.showButtonPrevious4" class="carousel-nav-button">❮</button>
     <div class="carousel">
       @for (item of displayedImages4; track $index) {
@@ -22,7 +23,8 @@
       }
     </div>
     <button (click)="showNext4()" [disabled]="!this.showButtonNext4" class="carousel-nav-button">❯</button>
-  </div>
+  </div> -->
+  <app-carousel></app-carousel>
 </section>
 
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
@@ -238,6 +240,8 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<app-carousel></app-carousel>
 
 <!-- FIN DE PROYECTOS -->
 
