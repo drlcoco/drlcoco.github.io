@@ -1,11 +1,13 @@
-import { AfterViewInit, ChangeDetectorRef, Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, HostListener, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-proyects',
   standalone: true,
-  imports: [],
+  imports: [CarouselComponent],
   templateUrl: './proyects.component.html',
-  styleUrl: './proyects.component.css'
+  styleUrl: './proyects.component.css',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProyectsComponent implements OnInit, AfterViewInit{
 

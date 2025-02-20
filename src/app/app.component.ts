@@ -8,11 +8,12 @@ import { AboutComponent } from './components/about/about.component';
 import { StartComponent } from './components/start/start.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, NavbarComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, HomeComponent, NavbarComponent, FooterComponent, CarouselComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
