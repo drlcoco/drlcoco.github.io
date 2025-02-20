@@ -1,59 +1,22 @@
-<!-- IMÁGENES DE PROYECTOS MD - XXL -->
+<!-- IMÁGENES DE PROYECTO 4 MD - XXL -->
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
   <h6 class="fw-bold fs-5">PROYECTO ESTUDIO 96 | N.04</h6>
-  <!-- <div class="carousel-container mb-5">
-
-    <button (click)="showPrevious4()" [disabled]="!this.showButtonPrevious4" class="carousel-nav-button">❮</button>
-    <div class="carousel">
-      @for (item of displayedImages4; track $index) {
-        @if(item && item.src !== undefined) {
-          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal4" (click)="setImage4($event)">
-            <img [src]="item.src" [class]="item.class" class="imgCarousel">
-          </a>
-          <div class="modal" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-transparent border-0">
-                <div class="modal-body bg-transparent border-0">
-                  <img [src]="currentSrc4" class="modalImage rounded-3" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-        }
-      }
-    </div>
-    <button (click)="showNext4()" [disabled]="!this.showButtonNext4" class="carousel-nav-button">❯</button>
-  </div> -->
-  <app-carousel></app-carousel>
+  <app-carousel [images]="images4"></app-carousel>
 </section>
 
+<!-- IMÁGENES DE PROYECTO 5 MD - XXL -->
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
-  <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.05</h6>
-  <div class="carousel-container mb-5">
-    <button (click)="showPrevious5()" [disabled]="!this.showButtonPrevious5" class="carousel-nav-button">❮</button>
-    <div class="carousel">
-      @for (item of displayedImages5; track $index) {
-        @if(item && item.src !== undefined) {
-          <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage5($event)">
-            <img [src]="item.src" [class]="item.class" class="imgCarousel" loading="lazy">
-          </a>
-          <div class="modal" tabindex="-1" id="imageModal" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-transparent border-0">
-                <div class="modal-body bg-transparent border-0">
-                  <img [src]="currentSrc5" class="modalImage rounded-3">
-                </div>
-              </div>
-            </div>
-          </div>
-        }
-      }
-    </div>
-    <button (click)="showNext5()" [disabled]="!this.showButtonNext5" class="carousel-nav-button">❯</button>
-  </div>
+  <h6 class="fw-bold fs-5">PROYECTO ESTUDIO 96 | N.05</h6>
+  <app-carousel [images]="images5"></app-carousel>
 </section>
 
+<!-- IMÁGENES DE PROYECTO 6 MD - XXL -->
 <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
+  <h6 class="fw-bold fs-5">PROYECTO ESTUDIO 96 | N.06</h6>
+  <app-carousel [images]="images6"></app-carousel>
+</section>
+
+<!-- <section class="container text-center fw-lighter lh-base mb-5 d-none d-md-block">
   <h6 class="fw-bold fs-5 mb-5">PROYECTO ESTUDIO 96 | N.06</h6>
   <div class="carousel-container mb-5">
     <button (click)="showPrevious6()" [disabled]="!this.showButtonPrevious6" class="carousel-nav-button">❮</button>
@@ -77,7 +40,7 @@
     </div>
     <button (click)="showNext6()" [disabled]="!this.showButtonNext6" class="carousel-nav-button">❯</button>
   </div>
-</section>
+</section> -->
 
 <!-- IMÁGENES DE PROYECTOS SM - XS -->
 <div class="text-center d-md-none">
@@ -240,8 +203,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-<app-carousel></app-carousel>
 
 <!-- FIN DE PROYECTOS -->
 
