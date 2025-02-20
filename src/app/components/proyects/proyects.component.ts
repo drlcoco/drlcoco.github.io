@@ -1,5 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, HostListener, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
+import { Image } from '../../interfaces/image';
 
 @Component({
   selector: 'app-proyects',
@@ -13,46 +14,46 @@ export class ProyectsComponent implements OnInit, AfterViewInit{
 
   folder = ''; // Carpeta predeterminada
 
-  images4 = [
-    { src: '/assets/images/project4/image00001.webp', alt: 'image00001' },
-    { src: '/assets/images/project4/image00002.webp', alt: 'image00002' },
-    { src: '/assets/images/project4/image00003.webp', alt: 'image00003' },
-    { src: '/assets/images/project4/image00004.webp', alt: 'image00004' },
-    { src: '/assets/images/project4/image00005.webp', alt: 'image00005' },
-    { src: '/assets/images/project4/image00006.webp', alt: 'image00006' },
-    { src: '/assets/images/project4/image00007.webp', alt: 'image00007' },
-    { src: '/assets/images/project4/image00008.webp', alt: 'image00008' },
-    { src: '/assets/images/project4/image00009.webp', alt: 'image00009' },
-    { src: '/assets/images/project4/image00010.webp', alt: 'image00010' },
-    { src: '/assets/images/project4/image00011.webp', alt: 'image00011' },
-    { src: '/assets/images/project4/image00012.webp', alt: 'image00012' },
-    { src: '/assets/images/project4/image00013.webp', alt: 'image00013' }
+  images4: Image[] = [
+    { src: '/assets/images/project4/image00001.webp', alt: '#image00001' },
+    { src: '/assets/images/project4/image00002.webp', alt: '#image00002' },
+    { src: '/assets/images/project4/image00003.webp', alt: '#image00003' },
+    { src: '/assets/images/project4/image00004.webp', alt: '#image00004' },
+    { src: '/assets/images/project4/image00005.webp', alt: '#image00005' },
+    { src: '/assets/images/project4/image00006.webp', alt: '#image00006' },
+    { src: '/assets/images/project4/image00007.webp', alt: '#image00007' },
+    { src: '/assets/images/project4/image00008.webp', alt: '#image00008' },
+    { src: '/assets/images/project4/image00009.webp', alt: '#image00009' },
+    { src: '/assets/images/project4/image00010.webp', alt: '#image00010' },
+    { src: '/assets/images/project4/image00011.webp', alt: '#image00011' },
+    { src: '/assets/images/project4/image00012.webp', alt: '#image00012' },
+    { src: '/assets/images/project4/image00013.webp', alt: '#image00013' }
   ];
 
-  images5 = [
-    { src: '/assets/images/project5/image00001.webp', alt: 'image00001' },
-    { src: '/assets/images/project5/image00002.webp', alt: 'image00002' },
-    { src: '/assets/images/project5/image00003.webp', alt: 'image00003' },
-    { src: '/assets/images/project5/image00004.webp', alt: 'image00004' },
-    { src: '/assets/images/project5/image00005.webp', alt: 'image00005' },
-    { src: '/assets/images/project5/image00006.webp', alt: 'image00006' },
-    { src: '/assets/images/project5/image00008.webp', alt: 'image00008' },
-    { src: '/assets/images/project5/image00007.webp', alt: 'image00007' },
-    { src: '/assets/images/project5/image00009.webp', alt: 'image00009' },
-    { src: '/assets/images/project5/image00010.webp', alt: 'image00010' }
+  images5: Image[]= [
+    { src: '/assets/images/project5/image00001.webp', alt: '#image00001' },
+    { src: '/assets/images/project5/image00002.webp', alt: '#image00002' },
+    { src: '/assets/images/project5/image00003.webp', alt: '#image00003' },
+    { src: '/assets/images/project5/image00004.webp', alt: '#image00004' },
+    { src: '/assets/images/project5/image00005.webp', alt: '#image00005' },
+    { src: '/assets/images/project5/image00006.webp', alt: '#image00006' },
+    { src: '/assets/images/project5/image00008.webp', alt: '#image00008' },
+    { src: '/assets/images/project5/image00007.webp', alt: '#image00007' },
+    { src: '/assets/images/project5/image00009.webp', alt: '#image00009' },
+    { src: '/assets/images/project5/image00010.webp', alt: '#image00010' }
   ];
 
-  images6 = [
-    { src: `/assets/images/project6/${this.folder}/image00001.webp`, alt: 'image00001' },
-    { src: `/assets/images/project6/${this.folder}/image00002.webp`, alt: 'image00002' },
-    { src: `/assets/images/project6/${this.folder}/image00003.webp`, alt: 'image00003' },
-    { src: `/assets/images/project6/${this.folder}/image00004.webp`, alt: 'image00004' },
-    { src: `/assets/images/project6/${this.folder}/image00005.webp`, alt: 'image00005' },
-    { src: `/assets/images/project6/${this.folder}/image00006.webp`, alt: 'image00006' },
-    { src: `/assets/images/project6/${this.folder}/image00007.webp`, alt: 'image00007' },
-    { src: `/assets/images/project6/${this.folder}/image00008.webp`, alt: 'image00008' },
-    { src: `/assets/images/project6/${this.folder}/image00009.webp`, alt: 'image00009' },
-    { src: `/assets/images/project6/${this.folder}/image000010.webp`, alt: 'image000010' }
+  images6: Image[] = [
+    { src: `/assets/images/project6/${this.folder}/image00001.webp`, alt: '#image00001' },
+    { src: `/assets/images/project6/${this.folder}/image00002.webp`, alt: '#image00002' },
+    { src: `/assets/images/project6/${this.folder}/image00003.webp`, alt: '#image00003' },
+    { src: `/assets/images/project6/${this.folder}/image00004.webp`, alt: '#image00004' },
+    { src: `/assets/images/project6/${this.folder}/image00005.webp`, alt: '#image00005' },
+    { src: `/assets/images/project6/${this.folder}/image00006.webp`, alt: '#image00006' },
+    { src: `/assets/images/project6/${this.folder}/image00007.webp`, alt: '#image00007' },
+    { src: `/assets/images/project6/${this.folder}/image00008.webp`, alt: '#image00008' },
+    { src: `/assets/images/project6/${this.folder}/image00009.webp`, alt: '#image00009' },
+    { src: `/assets/images/project6/${this.folder}/image000010.webp`, alt: '#image000010' }
   ];
 
   currentIndex4: number = 0;
@@ -236,8 +237,6 @@ export class ProyectsComponent implements OnInit, AfterViewInit{
   }
 
   getResponsiveImageSrc(image: any): string {
-    console.log("image.src:  ",image.src);
-
     return image.src.replace('.webp', '-responsive.webp');
   }
 

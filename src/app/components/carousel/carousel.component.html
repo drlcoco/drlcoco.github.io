@@ -1,79 +1,78 @@
+@if(images[0].src.includes(this.project4)) {
   <section>
     <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
     initial-slide="3" slides-per-view="2" coverflow-effect-rotate="-9" coverflow-effect-stretch="9" coverflow-effect-depth="100"
     coverflow-effect-modifier="4" coverflow-effect-slide-shadows="true" loop="false" autoplay="false" speed="600" pagination-clickable="true"
     on-click-slide-to-clicked-index="true">
-    @for (item of images4; track $index) {
+    @for (item of images; track $index) {
+      @if(item && item.src !== undefined) {
       <swiper-slide>
-        <img src="{{item.src}}" />
+        <img src="{{item.src}}" loading="lazy"/>
         <div class="text-center mt-2 mx-auto">
-          <button type="button" class="btn btn-primary format" data-bs-toggle="modal" data-bs-target="#imageModal4"
-            (click)="setImage4(item.src)">
-            
-          </button>
-        </div>
-      </swiper-slide>
-    }
-    </swiper-container>
-
-    <!-- Modal reutilizable para mostrar la imagen -->
-    <div class="modal fade" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
-          <div class="modal-body bg-transparent border-0 text-center">
-            <img [src]="currentSrc4" class="modalImage rounded-3 img-fluid" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-        <!-- <div>
-          <a type="button" class="btn btn-primary format" data-bs-toggle="modal" data-bs-target="#imageModal4" (click)="setImage4($event)">
-            Ver {{item.alt}}
+          <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project4"
+            (click)="setImage(item.src)">
+            <i class="bi bi-arrows-fullscreen"></i>
           </a>
-          <div class="modal" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-transparent border-0">
-                <div class="modal-body bg-transparent border-0">
-                  <img [src]="currentSrc4" class="modalImage rounded-3" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </swiper-slide>
+      }
     }
     </swiper-container>
-  </section> -->
-
-  <!-- <section>
+  </section>
+}
+@if(images[0].src.includes(this.project5)) {
+  <section>
     <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-      initial-slide="3" slides-per-view="2" coverflow-effect-rotate="-9" coverflow-effect-stretch="9" coverflow-effect-depth="100"
-      coverflow-effect-modifier="4" coverflow-effect-slide-shadows="true" loop="false" autoplay="false" speed="600"
-      pagination-clickable="true">
-
-      <swiper-slide *ngFor="let item of images4">
-        <img [src]="item.src" [alt]="item.alt" class="img-fluid rounded-3" />
-        <div class="text-center mt-2">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal4"
-            (click)="setImage4(item.src)">
-            Ver {{item.alt}}
-          </button>
+    initial-slide="3" slides-per-view="2" coverflow-effect-rotate="-9" coverflow-effect-stretch="9" coverflow-effect-depth="100"
+    coverflow-effect-modifier="4" coverflow-effect-slide-shadows="true" loop="false" autoplay="false" speed="600" pagination-clickable="true"
+    on-click-slide-to-clicked-index="true">
+    @for (item of images; track $index) {
+      @if(item && item.src !== undefined) {
+      <swiper-slide>
+        <img src="{{item.src}}" loading="lazy"/>
+        <div class="text-center mt-2 mx-auto">
+          <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project5"
+            (click)="setImage(item.src)">
+            <i class="bi bi-arrows-fullscreen"></i>
+          </a>
         </div>
       </swiper-slide>
-
+      }
+    }
     </swiper-container>
+  </section>
+}
 
-    <div class="modal fade" tabindex="-1" id="imageModal4" aria-labelledby="imageModalLabel4" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
-          <div class="modal-body bg-transparent border-0 text-center">
-            <img [src]="currentSrc4" class="modalImage rounded-3 img-fluid" loading="lazy">
-          </div>
+@if(images[0].src.includes(this.project6)) {
+  <section>
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    initial-slide="3" slides-per-view="2" coverflow-effect-rotate="-9" coverflow-effect-stretch="9" coverflow-effect-depth="100"
+    coverflow-effect-modifier="4" coverflow-effect-slide-shadows="true" loop="false" autoplay="false" speed="600" pagination-clickable="true"
+    on-click-slide-to-clicked-index="true">
+    @for (item of images; track $index) {
+      @if(item && item.src !== undefined) {
+      <swiper-slide>
+        <img src="{{item.src}}" loading="lazy"/>
+        <div class="text-center mt-2 mx-auto">
+          <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project6"
+            (click)="setImage(item.src)">
+            <i class="bi bi-arrows-fullscreen"></i>
+          </a>
         </div>
+      </swiper-slide>
+      }
+    }
+    </swiper-container>
+  </section>
+}
+
+<!-- Modal reutilizable para mostrar la imagen -->
+<div class="modal fade" tabindex="-1" id="{{this.currentId}}" aria-labelledby="imageModalLabel4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body bg-transparent border-0 text-center">
+        <img [src]="currentSrc" class="modalImage rounded-3 img-fluid" loading="lazy">
       </div>
     </div>
-  </section> -->
-
-
-
+  </div>
+</div>
