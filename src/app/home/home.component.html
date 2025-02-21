@@ -1,14 +1,8 @@
-<div id="inicio" class="section">
-  <app-start></app-start>
-</div>
-<div id="sobre-nosotros" class="section">
-  <app-about></app-about>
-</div>
-<hr class="divider">
-<div id="proyectos" class="section">
+<app-start id="{{ SECTIONS.initial }}" class="section"></app-start>
+<app-about id="{{ SECTIONS.about }}" class="section"></app-about>
+<hr class="divider" />
+<div id="{{ SECTIONS.proyects }}" class="section">
   <app-proyects></app-proyects>
-  <hr class="divider">
+  <hr class="divider" />
 </div>
-<div id="contacto" class="section">
-  <app-contact></app-contact>
-</div>
+<app-contact id="{{ SECTIONS.contact }}" class="section"></app-contact>

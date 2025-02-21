@@ -1,47 +1,47 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { AboutComponent } from '../components/about/about.component';
 import { StartComponent } from '../components/start/start.component';
 import { ProyectsComponent } from '../components/proyects/proyects.component';
 import { ContactComponent } from '../components/contact/contact.component';
-import { CarouselComponent } from "../components/carousel/carousel.component";
+import { SECTION } from '../shared/models/sections.types';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, StartComponent, AboutComponent, ProyectsComponent, ContactComponent, CarouselComponent],
+  imports: [StartComponent, AboutComponent, ProyectsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  protected readonly SECTIONS = SECTION;
 
-    @HostListener('window:hashchange', ['$event'])
-    onHashChange(event: Event) {
-      this.scrollToElement();
-    }
+  @HostListener('window:hashchange', ['$event'])
+  onHashChange(event: Event) {
+    this.scrollToElement();
+  }
 
-    ngOnInit() {
-      this.scrollToElement();
-    }
+  ngOnInit() {
+    this.scrollToElement();
+  }
 
-    private scrollToElement(): void {
-      if (location.hash) { // Verifica que location.hash no esté vacío
-        const element = document.querySelector(location.hash);
-        if (element) {
-          const headerOffset = 170;
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-          const offsetPosition = elementPosition - headerOffset;
+  private scrollToElement(): void {
+    if (location.hash) { // Verifica que location.hash no esté vacío
+      const element = document.querySelector(location.hash);
+      if (element) {
+        const headerOffset = 170;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        } else {
-          console.warn(`No se encontró ningún elemento con el selector: ${location.hash}`);
-        }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       } else {
-        console.warn('El hash de la URL está vacío.');
+        console.warn(`No se encontró ningún elemento con el selector: ${location.hash}`);
       }
+    } else {
+      console.warn('El hash de la URL está vacío.');
     }
+  }
 }
 
