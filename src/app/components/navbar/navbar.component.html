@@ -1,52 +1,104 @@
-<header [class.hide-header]="!isHeaderVisible" class="container-fluid pb-2 fixed-top set-color-beige">
+<header
+  [class.hide-header]="!isHeaderVisible"
+  class="pb-2 container-fluid fixed-top set-color-beige"
+>
   <div class="row">
     <div class="col-12 d-flex justify-content-center bg-logo">
-      <img src="./assets/images/logo.webp" alt="Logo" class="logo img-thumbnail rounded-3">
+      <img
+        src="./assets/images/logo.webp"
+        alt="Logo"
+        class="logo img-thumbnail rounded-3"
+      />
     </div>
   </div>
   <div class="row">
-    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green d-none d-md-block">
-      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center">
+    <div
+      class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green d-none d-md-block"
+    >
+      <!-- Layout LG -->
+      <nav
+        class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center"
+        aria-label="Main Navigation"
+      >
         <ul class="nav w-100 justify-content-around align-items-center">
           <li class="nav-item">
-            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#inicio'), '':!setActiveTab('/#inicio')}" href="#inicio">INICIO</a>
+            <a
+              class="nav-link dynamic-text"
+              [class.active]="activeSection() === SECTION.initial"
+              href="#{{ SECTION.initial }}"
+              >INICIO</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#sobre-nosotros'), '':!setActiveTab('/#sobre-nosotros')}" href="#sobre-nosotros">SOBRE NOSOTROS</a>
+            <a
+              class="nav-link dynamic-text"
+              [class.active]="activeSection() === SECTION.about"
+              href="#{{ SECTION.about }}"
+              >SOBRE NOSOTROS</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#proyectos'), '':!setActiveTab('/#proyectos')}" href="#proyectos">PORTFOLIO</a>
+            <a
+              class="nav-link dynamic-text"
+              [class.active]="activeSection() === SECTION.proyects"
+              href="#{{ SECTION.proyects }}"
+              >PORTFOLIO</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text" [ngClass]="{'active':setActiveTab('/#contacto'), '':!setActiveTab('/#contacto')}" href="#contacto">CONTACTO</a>
+            <a
+              class="nav-link dynamic-text"
+              [class.active]="activeSection() === SECTION.contact"
+              href="#{{ SECTION.contact }}"
+              >CONTACTO</a
+            >
           </li>
         </ul>
       </nav>
     </div>
-
-    <div class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green-sm d-md-none">
-      <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center">
+    <!-- Layout SM -->
+    <div
+      class="col-12 d-flex justify-content-center align-items-center w-100 set-color-dark-green-sm d-md-none"
+    >
+      <nav
+        class="navbar navbar-expand-lg w-100 d-flex justify-content-center align-items-center"
+        aria-label="Main Navigation"
+      >
         <ul class="nav w-100 justify-content-around align-items-center">
           <li class="nav-item">
-            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#inicio'), '':!setActiveTab('/#inicio')}" href="#inicio">INICIO</a>
+            <a
+              class="nav-link dynamic-text-sm"
+              [class.active]="activeSection() === SECTION.initial"
+              href="#{{ SECTION.initial }}"
+              >INICIO</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#sobre-nosotros'), '':!setActiveTab('/#sobre-nosotros')}" href="#sobre-nosotros">SOBRE NOSOTROS</a>
+            <a
+              class="nav-link dynamic-text-sm"
+              [class.active]="activeSection() === SECTION.about"
+              href="#{{ SECTION.about }}"
+              >SOBRE NOSOTROS</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#proyectos'), '':!setActiveTab('/#proyectos')}" href="#proyectos">PORTFOLIO</a>
+            <a
+              class="nav-link dynamic-text-sm"
+              [class.active]="activeSection() === SECTION.proyects"
+              href="#{{ SECTION.proyects }}"
+              >PORTFOLIO</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#contacto'), '':!setActiveTab('/#contacto')}" href="#contacto">CONTACTO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dynamic-text-sm" [ngClass]="{'active':setActiveTab('/#david'), '':!setActiveTab('/#david')}" href="#david">david</a>
+            <a
+              class="nav-link dynamic-text-sm"
+              [class.active]="activeSection() === SECTION.contact"
+              href="#{{ SECTION.contact }}"
+              >CONTACTO</a
+            >
           </li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
-
-
-

@@ -1,22 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject, Signal } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
+import { Section, SECTION } from '../../shared/models/sections.types';
+import { ScrollTrackerService } from '../../shared/services/scroll-tracker.service';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  private readonly scrollTracker = inject(ScrollTrackerService);
+  protected readonly SECTION = SECTION;
+  protected readonly activeSection: Signal<Section>;
+
 
   public isHeaderVisible: boolean = true; // Cambiar a isHeaderVisible
   private lastScrollTop: number = 0;
   private scrollThreshold: number = 150;
   isToggle: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.activeSection = this.scrollTracker.activeSection;
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
