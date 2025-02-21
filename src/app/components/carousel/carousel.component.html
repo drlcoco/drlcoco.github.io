@@ -7,7 +7,7 @@
     @for (item of images; track $index) {
       @if(item && item.src !== undefined) {
       <swiper-slide>
-        <img src="{{item.src}}" loading="lazy"/>
+        <img src="{{item.src}}"/>
         <div class="text-center mt-2 mx-auto">
           <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project4"
             (click)="setImage(item.src)">
@@ -29,7 +29,7 @@
     @for (item of images; track $index) {
       @if(item && item.src !== undefined) {
       <swiper-slide>
-        <img src="{{item.src}}" loading="lazy"/>
+        <img src="{{item.src}}"/>
         <div class="text-center mt-2 mx-auto">
           <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project5"
             (click)="setImage(item.src)">
@@ -52,7 +52,7 @@
     @for (item of images; track $index) {
       @if(item && item.src !== undefined) {
       <swiper-slide>
-        <img src="{{item.src}}" loading="lazy"/>
+        <img src="{{item.src}}"/>
         <div class="text-center mt-2 mx-auto">
           <a type="button" class="btn format" data-bs-toggle="modal" data-bs-target="#project6"
             (click)="setImage(item.src)">
