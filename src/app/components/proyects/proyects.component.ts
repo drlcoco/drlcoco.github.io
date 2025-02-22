@@ -1,11 +1,12 @@
 import { AfterViewInit, ChangeDetectorRef, Component, HostListener, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { Image } from '../../interfaces/image';
+import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: 'app-proyects',
   standalone: true,
-  imports: [CarouselComponent],
+  imports: [CarouselComponent, CardComponent],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

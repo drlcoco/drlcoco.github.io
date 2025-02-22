@@ -1,0 +1,11 @@
+<section>
+  <swiper-container class="mySwiper" effect="cards" grab-cursor="true" autoplay="true" speed="300">
+    @for (item of images; track $index) {
+      @if(item && item.src !== undefined) {
+      <swiper-slide>
+        <img src="{{item.src}}"/>
+      </swiper-slide>
+      }
+    }
+  </swiper-container>
+</section>
