@@ -3,12 +3,11 @@ import { CarouselComponent } from '../carousel/carousel.component';
 import { Image } from '../../interfaces/image';
 
 @Component({
-  selector: 'app-proyects',
-  standalone: true,
-  imports: [CarouselComponent],
-  templateUrl: './proyects.component.html',
-  styleUrl: './proyects.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    selector: 'app-proyects',
+    imports: [CarouselComponent],
+    templateUrl: './proyects.component.html',
+    styleUrl: './proyects.component.css',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProyectsComponent implements OnInit, AfterViewInit{
 

@@ -6,11 +6,10 @@ import { ContactComponent } from '../components/contact/contact.component';
 import { SECTION } from '../shared/models/sections.types';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [StartComponent, AboutComponent, ProyectsComponent, ContactComponent],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    imports: [StartComponent, AboutComponent, ProyectsComponent, ContactComponent],
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
   protected readonly SECTIONS = SECTION;

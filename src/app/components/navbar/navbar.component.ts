@@ -5,11 +5,10 @@ import { Section, SECTION } from '../../shared/models/sections.types';
 import { ScrollTrackerService } from '../../shared/services/scroll-tracker.service';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [RouterModule],
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+    selector: 'app-navbar',
+    imports: [RouterModule],
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
   private readonly scrollTracker = inject(ScrollTrackerService);
