@@ -12,13 +12,12 @@ section {
 
 swiper-container {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 swiper-slide {
   background-position: center;
-  /* background-size: cover; */
   width: 300px;
   height: auto;
 }
@@ -28,7 +27,6 @@ swiper-slide img {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-  /* aspect-ratio: 1/0.6; */
 }
 
 .modal-dialog {
@@ -92,21 +90,6 @@ a:focus {
   opacity: 1;
 }
 
-/* .format {
-  position: absolute;
-  bottom: 40px;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #717171;
-  font-weight: 500;
-  background: #F3F2EC;
-  border-radius: 3.125rem;
-  margin: 0 auto;
-  font-size: 0.7rem;
-  transition: 0.3s ease-in-out;
-} */
-
 .format {
   position: absolute;
   top: 0;
@@ -119,7 +102,6 @@ a:focus {
   background: #F3F2EC;
   border-radius: 3.125rem;
   margin: 0;
-  /* padding: 6px 26px; */
   margin: 4px 4px 0 0;
   font-size: 0.7rem;
   transition: 0.3s ease-in-out;
