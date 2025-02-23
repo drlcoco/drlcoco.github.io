@@ -5,7 +5,6 @@ import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: 'app-proyects',
-  standalone: true,
   imports: [CarouselComponent, CardComponent],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.css',
