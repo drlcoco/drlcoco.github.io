@@ -2,6 +2,11 @@
   display: block;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 991.98px) {
+    height: auto;
+    min-height: 100%;
+  }
 }
 
 .maintenance-page {
@@ -10,6 +15,13 @@
   height: 100dvh;
   overflow: hidden;
   background: #140022;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
 }
 
 // --- Imagen a pantalla completa --------------------------------------------
@@ -20,6 +32,14 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 991.98px) {
+    position: relative;
+    inset: auto;
+    display: block;
+    min-height: 100dvh;
+    overflow: visible;
+  }
 }
 
 // Caja con el aspect-ratio nativo de la imagen: se ajusta al viewport sin
@@ -34,6 +54,11 @@
   container-type: inline-size;
   --poster-ratio: 852 / 1846;
   aspect-ratio: var(--poster-ratio);
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    height: auto;
+  }
 
   @media (min-width: 992px) {
     // mantenimientolg.PNG: mismo diseño, fondo ampliado a 16:9 (1672x941).
@@ -82,7 +107,7 @@
 }
 
 .poster-video {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   object-fit: cover;

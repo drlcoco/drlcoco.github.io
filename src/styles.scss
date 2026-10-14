@@ -10,3 +10,13 @@ body {
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+
+@media (max-width: 991.98px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
