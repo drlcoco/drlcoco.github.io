@@ -93,9 +93,9 @@
 .headline {
   position: absolute;
   left: 6%;
-  width: 88%;
+  width: 98%;
   top: 62.8%;
-  height: 23.6%;
+  height: 28.6%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,8 +252,8 @@
   flex: none;
   display: grid;
   place-items: center;
-  width: clamp(1.6rem, 7.5cqw, 2.6rem);
-  height: clamp(1.6rem, 7.5cqw, 2.6rem);
+  width: clamp(2.1rem, 9.5cqw, 3.4rem);
+  height: clamp(2.1rem, 9.5cqw, 3.4rem);
   border-radius: 50%;
   background: #25d366;
   color: #fff;
@@ -266,8 +266,8 @@
   transition: filter 0.2s ease-out;
 
   svg {
-    width: 58%;
-    height: 58%;
+    width: 64%;
+    height: 64%;
   }
 
   &:hover,
