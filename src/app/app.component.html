@@ -2,8 +2,8 @@
   <!--
     Imagen a pantalla completa, sin deformarse ni recortarse (caja con el
     aspect-ratio nativo de la imagen, centrada).
-    - < md (sm y xs): mantenimientosm.png (formato vertical).
-    - >= md: mantenimientolg.PNG (16:9, mismo diseño con el fondo ampliado con
+    - < lg (xs, sm y md): image_sm.PNG (cartel vertical).
+    - >= lg: mantenimientolg.PNG (16:9, mismo diseño con el fondo ampliado con
       iconos a los lados y círculo transparente). El círculo del vídeo y el
       titular tienen sus propios porcentajes para este breakpoint, ver app.component.scss.
   -->
@@ -24,9 +24,9 @@
       </div>
 
       <picture class="poster-picture">
-        <source media="(min-width: 768px)" srcset="assets/images/mantenimientolg.PNG">
+        <source media="(min-width: 992px)" srcset="assets/images/mantenimientolg.PNG">
         <img
-          src="assets/images/mantenimientosm.png"
+          src="assets/images/image_sm.PNG"
           alt="El Crucero de los 90, 5ª edición 2027. Os estamos preparando algo muy grande."
           class="poster-img"
         >
